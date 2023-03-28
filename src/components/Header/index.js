@@ -32,18 +32,25 @@ const Header = () => (
               type="button"
               onClick={() => close()}
             >
-              <IoMdClose size="30" color="#616e7c" />
+              <IoMdClose
+                size="30"
+                color="#616e7c"
+                data-testid="hamburgerIconButton"
+              />
             </button>
             <ul className="nav-link-list">
               <li className="nav-link-item">
                 <Link className="nav-link" to="/" onClick={() => close()}>
-                  <AiFillHome size="36" />
+                  <AiFillHome size="36" data-testid="hamburgerIconButton" />
                   <h1 className="nav-link-content">Home</h1>
                 </Link>
               </li>
               <li className="nav-link-item">
                 <Link className="nav-link" to="/about" onClick={() => close()}>
-                  <BsInfoCircleFill size="32" />
+                  <BsInfoCircleFill
+                    size="32"
+                    data-testid="hamburgerIconButton"
+                  />
                   <h1 className="nav-link-content">About</h1>
                 </Link>
               </li>
